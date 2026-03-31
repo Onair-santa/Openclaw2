@@ -17,9 +17,18 @@
 
 ---
 
-## 🗄️ FILE INDEX (SQLite)
+## 🗄️ DATABASES
 
+### File Index (SQLite)
 **Путь:** `/home/openclaw/.openclaw/workspace/data/file_index.db`
+**Файлов в индексе:** 52
+**Назначение:** Полнотекстовый поиск по workspace через FTS5.
+
+### LCM (Lossless Context Management)
+**Путь:** `~/.openclaw/lcm.db`
+**Плагин:** lossless-claw v0.4.0
+**Назначение:** Сжатие истории чата без потери данных.
+**Настройки:** Context Threshold 0.75, Fresh Tail 32, Max Depth -1
 
 **Команды:**
 ```bash
