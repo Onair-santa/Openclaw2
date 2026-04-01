@@ -47,6 +47,19 @@ sqlite3 /home/openclaw/.openclaw/workspace/data/file_index.db \
 **Chromium:** Скачан (167.3 MiB)
 **Скилл:** `/home/openclaw/.openclaw/workspace/skills/playfetch/`
 
+## TTS (Text-to-Speech)
+
+**Статус:** edge-tts v7.2.8 установлен ✅
+**Команда:** `edge-tts --text "<текст>" --voice ru-RU-SvetlanaNeural --write-media /tmp/msg.mp3`
+**Голоса:** ru-RU-SvetlanaNeural (женский), ru-RU-DmitryNeural (мужской)
+**Отправка:** Через `message` tool как аудиофайл (не voice message)
+
+**Пример:**
+```bash
+edge-tts --text "Привет" --voice ru-RU-SvetlanaNeural --write-media /tmp/tts.mp3
+message action=send channel=telegram target=telegram:34793946 media=/tmp/tts.mp3
+```
+
 ## Skills
 
 **Путь:** `/home/openclaw/.openclaw/workspace/skills/`

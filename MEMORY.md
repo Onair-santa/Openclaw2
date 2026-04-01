@@ -128,6 +128,23 @@ export OLLAMA_HOST=http://192.168.0.180:11434
 | Extensions | `/home/openclaw/.openclaw/extensions/` |
 | Ollama | `http://192.168.0.180:11434` |
 
+## 🎤 TTS (Голосовые сообщения)
+
+**edge-tts v7.2.8** установлен через pip.
+
+**Команда:**
+```bash
+edge-tts --text "<текст>" --voice ru-RU-SvetlanaNeural --write-media /tmp/msg.mp3
+```
+
+**Отправка в Telegram:**
+- Нельзя: voice messages (запрещено API)
+- Можно: как аудиофайл через `message tool`
+
+**Голоса:**
+- `ru-RU-SvetlanaNeural` — женский
+- `ru-RU-DmitryNeural` — мужской
+
 ---
 
 ## 👤 OWNER
