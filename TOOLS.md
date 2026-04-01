@@ -58,16 +58,12 @@ sqlite3 /home/openclaw/.openclaw/workspace/data/file_index.db \
 - `file-index/` — SQLite индексация файлов
 - `pdf-to-md/` — конвертация PDF в Markdown
 - `playfetch/` — парсинг через Playwright
-- `tron-wallet/` — мониторинг TRON-кошелька
 - `workspace-startup/` — файлы для чтения при старте
 
-## TRON Wallet
 
-**Адрес:** `TFZyBiqYPxdbgyDwN5Junf5exuT1pW39DP`
 **Команда:** `*баланс` (баланс, проверь баланс, баланс trx, баланс usdt)
 **Cron:** 5 мин (id: bf6046f0-8d49-4546-94e1-22a5ef4c5198)
 **API:** Tronscan (бесплатный)
-**Файлы:** `skills/tron-wallet/check_wallet.py`, `skills/tron-wallet/last_txs.json`
 
 ## Конфиг (exec без approval)
 

@@ -62,16 +62,12 @@ python3 /home/openclaw/.openclaw/workspace/skills/file-index/index_files.py
 | `pdf-to-md/` | PDF → Markdown | |
 | `playfetch/` | Парсинг Playwright | |
 | `system-check/` | Проверка систем | `* проверка` |
-| `tron-wallet/` | TRON мониторинг | `*баланс` |
 
 ---
 
-## 💰 TRON WALLET
 
-**Адрес:** `TFZyBiqYPxdbgyDwN5Junf5exuT1pW39DP`
 **Команда:** `*баланс`
 **Cron:** 5 мин (id: bf6046f0-8d49-4546-94e1-22a5ef4c5198)
-**Файлы:** `skills/tron-wallet/check_wallet.py`, `skills/tron-wallet/last_txs.json`
 
 ---
 
@@ -79,7 +75,6 @@ python3 /home/openclaw/.openclaw/workspace/skills/file-index/index_files.py
 
 | ID | Name | Расписание | Delivery |
 |----|------|-----------|----------|
-| `bf6046f0...` | TRON Wallet Monitor | каждые 5 мин | Telegram ✅ |
 | `5658aa3f...` | nightly-cleanup | 3:00 MSK | Telegram ✅ |
 | `666954d4...` | github-backup-daily | 3:00 MSK | none |
 | `f772a4b5...` | health-morning-check | 8:00 MSK | Telegram ✅ |
