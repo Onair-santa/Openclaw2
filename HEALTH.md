@@ -2,7 +2,7 @@
 
 > Проверяется каждое утро в 8:00 MSK (cron `f772a4b5`)
 
-**Обновлено:** 2026-03-31 07:00 MSK
+**Обновлено:** 2026-04-01 07:00 MSK
 
 ---
 
@@ -10,13 +10,13 @@
 
 ---
 
-## Cron Jobs (4/4 активны)
+## Cron Jobs (3/3 активны)
 
 | Job | ID | Расписание | Статус | Последний запуск |
 |-----|----|-----------|--------|-----------------|
 | health-morning-check | `f772a4b5` | 8:00 MSK | ✅ OK | сейчас |
-| nightly-cleanup | `5658aa3f` | 3:00 MSK | ✅ OK | — |
-| github-backup-daily | `666954d4` | 3:00 MSK | ✅ OK | — |
+| nightly-cleanup | `5658aa3f` | 3:00 MSK | ✅ OK | сегодня 3:00 |
+| github-backup-daily | `666954d4` | 3:00 MSK | ✅ OK | сегодня 3:00 |
 
 ---
 
@@ -29,6 +29,7 @@
 | pdf-to-md | `skills/pdf-to-md/` | ✅ |
 | playfetch | `skills/playfetch/` | ✅ |
 | system-check | `skills/system-check/` | ✅ |
+| tron-wallet | `skills/tron-wallet/` | ✅ |
 | workspace-startup | `skills/workspace-startup/` | ✅ |
 
 ---
@@ -36,32 +37,43 @@
 ## File Index (SQLite)
 
 - База: `/home/openclaw/.openclaw/workspace/data/file_index.db`
-- Файлов проиндексировано: **52**
-- Content entries: **69**
-- sqlite3 CLI: **отсутствует** (но Python API работает)
+- Файлов проиндексировано: **данные доступны**
+- sqlite3 CLI: **отсутствует** (Python API работает)
 
 ---
 
 ## Git
 
 - Remote `github` настроен: `Onair-santa/Openclaw2`
-- Последний backup: 2026-03-31
+- Статус: чисто (нет изменений)
+- Последний backup: сегодня 3:00 MSK
 
 ---
 
+## Memory Files
 
-- TRX: ~75 | USDT: ~$84.27
-- Новых транзакций: нет
+- `memory/2026-03-22.md` ✅
+- `memory/2026-03-29.md` ✅
+- `memory/2026-03-30.md` ✅
+- `memory/2026-03-31.md` ✅
+- `MEMORY.md` ✅
+
+---
+
+## Tron Wallet
+
+- Скрипт: `skills/tron-wallet/check_wallet.py` ✅
+- Последний ответ: `last_txs.json` присутствует
 
 ---
 
 ## ⚠️ Заметки
 
 - `sqlite3` (CLI) не установлен — используется Python API (не критично)
-- `HEALTH.md` создан впервые (ранее отсутствовал)
 
 ---
 
 ## История
 
+- **2026-04-01** — утренняя проверка. Все системы OK.
 - **2026-03-31** — первая проверка. HEALTH.md создан. Все системы OK.
